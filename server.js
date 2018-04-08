@@ -74,6 +74,12 @@ app.get('/bad', (req,res) => {
     });
 })
 
+app.get('/private', (req, res) => {
+    res.render('private.hbs', {
+        pageTitle: "Portfolio welcome"
+    })
+});
+
 app.listen(port, () => {
     console.log(`Serwer stoi se na porcie ${port}`);
 });
